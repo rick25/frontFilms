@@ -1,9 +1,11 @@
 import { Fragment } from "react"
+import { useSelector } from "react-redux"
 
 const CantidadPokemon = () => {
+    const gameShop = useSelector(state=>state.gameShop)
     return (
         <Fragment>
-            Unidades: 30
+            Unidades: {gameShop.pokemon}
         </Fragment>
     )
 }
