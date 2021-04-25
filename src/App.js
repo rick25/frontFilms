@@ -4,6 +4,8 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import logo from "./img/game.jpg";
 import CantidadPokemon from "./components/CantidadPokemon";
 import CompraPokemon from "./components/CompraPokemon";
+import BuscadorPokemon from "./components/buscador/BuscadorPokemon";
+import ResultadoPokemon from "./components/buscador/ResultadoPokemon";
 
 function App() {
   return (
@@ -25,6 +27,12 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="col-12 mt-4 border-top pt-3">
+          <BuscadorPokemon />
+        </div>
+        <div className="col-12">
+          <ResultadoPokemon />
         </div>
       </div>
     </div>
